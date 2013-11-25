@@ -1,0 +1,6 @@
+{
+  "name": "analytics",
+  "repo": "hull/analytics",
+  "description": "The hassle-free way to integrate analytics into any web application. Mirrored build version for segmentio/analytics.js for usage with Bower.",
+  "version": "0.8.3"
+}

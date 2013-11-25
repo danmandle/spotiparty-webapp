@@ -1,2 +1,2 @@
-spotiparty-webapp
-=================
+# spotitest
+### a Sails application

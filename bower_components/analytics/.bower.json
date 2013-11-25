@@ -1,0 +1,14 @@
+{
+  "name": "analytics",
+  "homepage": "https://github.com/hull/analytics",
+  "version": "0.8.3",
+  "_release": "0.8.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.8.3",
+    "commit": "74f85092527f0660f7329b784d7ecd0944c85d47"
+  },
+  "_source": "git://github.com/hull/analytics.git",
+  "_target": "0.8.3",
+  "_originalSource": "hull/analytics"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "jquery-file-upload",
+  "homepage": "https://github.com/blueimp/jQuery-File-Upload",
+  "version": "7.2.1",
+  "_release": "7.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "7.2.1",
+    "commit": "5a12ec0cedb77e705da7249e9e462ac91a5cd2eb"
+  },
+  "_source": "git://github.com/blueimp/jQuery-File-Upload.git",
+  "_target": "7.2.1",
+  "_originalSource": "jquery-file-upload"
+}
