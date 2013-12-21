@@ -9,11 +9,17 @@
 module.exports = {
 
   attributes: {
-  	
+
   	/* e.g.
   	nickname: 'string'
   	*/
-    
+
+  },
+
+  beforeCreate: function(values, cb) {
+    values.playlist = values.playlist || [];
+
+    cb();
   }
 
 };
