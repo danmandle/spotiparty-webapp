@@ -1,0 +1,15 @@
+// Your custom SCSS should be written here...
+
+.navbar {
+  .logo {
+    min-height: 80px;
+  }
+}
+
+[data-hull-component="login/button@hull"]  {
+    .btn {
+      display: block;
+      max-width: 50%;
+      margin: 0 auto;
+    }
+}
