@@ -51,17 +51,21 @@ if (!window.called) {
         app = hull;
 
         if (app.data.api.model('me').attributes.id) {
-          online();
+          online(app.data.api.model('me').attributes);
         }
 
       });
 
-      var online = function() {
+      var online = function(user) {
         var self = this;
         console.log('Subscribing tod socket');
 
         if(window.location.pathname === '/') {
-          window.location.replace('/parties');
+          if(user.extra.partyId) {
+            window.location.replace('/search');
+          }else {
+            window.location.replace('/parties');
+          }
         }
 
         if (window.socket) {
