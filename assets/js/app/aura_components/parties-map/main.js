@@ -37,12 +37,13 @@ Hull.component({
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
     }).addTo(this.map);
 
-    this.L.marker(l).addTo(this.map);
+    this.L.marker(l).bindPopup('You').addTo(this.map).openPopup();
 
     this.addParties(l);
   },
 
-  addParties: function() {
+  addParties: function(l) {
+    var dfd = $.Deferred();
     this.parties = {};
     var icon = this.L.icon({
       iconUrl: '/images/map-icon.png',
@@ -52,14 +53,22 @@ Hull.component({
       popupAnchor: [-3, -76],
     });
     this.data.parties.forEach(function(party) {
+
       console.log('Adding party to map', party);
       this.parties[party.user] = {};
+
       this.parties[party.user].circle = this.L.circle([party.lat, party.long], party.radius, {
         color: '#61cd89',
-        fillColor: '#61cd89',
+        fillColor: '#' + (function co(lor){   return (lor +=
+            [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 6) ?  lor : co(lor); })(''),
         fillOpacity: 0.5
       }).addTo(this.map);
-      this.parties[party.user].marker = this.L.marker([party.lat, party.long], {icon: icon}).addTo(this.map);
+
+      this.parties[party.user].marker = this.L.marker([party.lat, party.long], {icon: icon}).bindPopup(party.partyName).addTo(this.map).openPopup();
+
     }.bind(this));
+
+    this.map.setView(l, 14);
+    return dfd;
   }
 });

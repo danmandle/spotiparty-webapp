@@ -13,6 +13,17 @@
         "createdAt": "2013-12-21T22:27:52.485Z",
         "updatedAt": "2013-12-21T23:18:54.953Z",
         "id": 1
+      },
+      {
+        "partyName": "BoomBox",
+        "user": "",
+        "lat": "40.014846448306976",
+        "long": "-105.26926875114441",
+        "radius": "1005",
+        "playlist": [],
+        "createdAt": "2014-01-03T05:11:23.656Z",
+        "updatedAt": "2014-01-03T05:11:23.656Z",
+        "id": 5
       }
     ],
     "search": [],
@@ -73,7 +84,7 @@
   },
   "counters": {
     "party": {
-      "id": 1
+      "id": 5
     },
     "search": {},
     "user": {}
