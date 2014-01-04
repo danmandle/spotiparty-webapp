@@ -1,7 +1,4 @@
 .DS_Store
 .sass-cache
-app/bower_components
-node_modules
-dist
 npm-debug.log
 

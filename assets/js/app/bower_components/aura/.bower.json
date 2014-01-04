@@ -1,0 +1,29 @@
+{
+  "name": "aura",
+  "description": "Aura is an event-driven architecture for developing scalable applications using reusable components",
+  "homepage": "http://aurajs.com",
+  "version": "0.9.2",
+  "main": [
+    "lib/aura.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aurajs/aura.git"
+  },
+  "dependencies": {
+    "jquery": "~1.10.x",
+    "underscore": "~1.5.x",
+    "eventemitter2": "~0.4.11",
+    "requirejs": "~2.1.4",
+    "requirejs-text": "~2.0.5"
+  },
+  "_release": "0.9.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.9.2",
+    "commit": "75a5cf05902612046da3ef61157eaf3dc6c45c7d"
+  },
+  "_source": "git://github.com/aurajs/aura.git",
+  "_target": "*",
+  "_originalSource": "aura"
+}
