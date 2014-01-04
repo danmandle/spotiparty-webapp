@@ -118,6 +118,10 @@ if (!window.called) {
 
     });
 
+    $('body').on('join.party', function(event, data) {
+      window.location.replace('/search?id=' + data);
+    });
+
   })();
 
 }
