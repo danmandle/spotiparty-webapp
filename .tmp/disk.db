@@ -274,7 +274,7 @@
           }
         ],
         "createdAt": "2014-01-04T20:00:32.007Z",
-        "updatedAt": "2014-01-04T20:16:40.039Z",
+        "updatedAt": "2014-01-04T20:49:53.570Z",
         "id": 1,
         "users": [
           {
@@ -354,6 +354,42 @@
               }
             ],
             "_id": "me"
+          },
+          {
+            "id": "52899f90a1f9df0fdb00036a",
+            "updated_at": "2014-01-04T19:55:40Z",
+            "created_at": "2013-11-18T05:03:12Z",
+            "name": "mcdermed",
+            "description": "",
+            "extra": {
+              "socketId": "3LOgLs-4TbKWviFR-ifn",
+              "partyId": "1"
+            },
+            "stats": {
+              "sign_in_count": "28"
+            },
+            "picture": "https://gravatar.com/avatar/e46486e6f18c608072218e329307e402?d=https%3A%2F%2Fidenticons.github.com%2F0089aa116048e7e92680f98f51489cf5.png&r=x",
+            "type": "user",
+            "approved": "false",
+            "email": "shmcdermed@gmail.com",
+            "is_admin": "false",
+            "main_identity": "github",
+            "access_token": "f245c06a2c31de9654585d6833dee266ab0dcdf71f44d668f8c07ece513d2a13",
+            "identities": [
+              {
+                "id": "52899f90a1f9df0fdb000369",
+                "created_at": "2013-11-18T05:03:12Z",
+                "name": "mcdermed",
+                "description": "",
+                "picture": "https://gravatar.com/avatar/e46486e6f18c608072218e329307e402?d=https%3A%2F%2Fidenticons.github.com%2F0089aa116048e7e92680f98f51489cf5.png&r=x",
+                "type": "github_account",
+                "provider": "github",
+                "uid": "1432369",
+                "login": "mcdermed",
+                "email": "shmcdermed@gmail.com"
+              }
+            ],
+            "_id": "me"
           }
         ]
       }
@@ -402,20 +438,20 @@
           }
         ],
         "_id": "me",
-        "socketId": "t0mFAgaTtpz2NGIP-ifk",
-        "__timestamp": 1388868350807,
-        "createdAt": "2014-01-04T20:45:50.809Z",
-        "updatedAt": "2014-01-04T20:45:50.811Z"
+        "socketId": "wFgJz2rZPg4wHE2N-ifr",
+        "__timestamp": 1388868957978,
+        "createdAt": "2014-01-04T20:55:57.978Z",
+        "updatedAt": "2014-01-04T20:55:57.978Z"
       },
       {
         "id": "52899f90a1f9df0fdb00036a",
-        "updated_at": "2014-01-04T19:55:40Z",
+        "updated_at": "2014-01-04T20:49:53Z",
         "created_at": "2013-11-18T05:03:12Z",
         "name": "mcdermed",
         "description": null,
         "extra": {
-          "socketId": "eXpLzF56ysc3R0_KZrEb",
-          "partyId": 12
+          "socketId": "3LOgLs-4TbKWviFR-ifn",
+          "partyId": 1
         },
         "stats": {
           "sign_in_count": 28
@@ -446,10 +482,10 @@
           }
         ],
         "_id": "me",
-        "socketId": "Ey-Rr3Scde1OUsh47dt4",
-        "__timestamp": 1388867577100,
-        "createdAt": "2014-01-04T20:32:57.100Z",
-        "updatedAt": "2014-01-04T20:32:57.100Z"
+        "socketId": "Q8YqrywhO2OVqDIT-ifo",
+        "__timestamp": 1388868594885,
+        "createdAt": "2014-01-04T20:49:54.885Z",
+        "updatedAt": "2014-01-04T20:49:54.886Z"
       }
     ]
   },
