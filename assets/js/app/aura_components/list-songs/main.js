@@ -44,7 +44,7 @@ Hull.component({
     $('[data-action-addSong]').on('click', function() {
       var elem = $(this);
       data = elem.data();
-      self.addToParty(data.actionAddsong, data.songid, data.songName);
+      self.addToParty(data.actionAddsong, data.songid, data.songname);
       console.log('Adding song', data.songid, 'to', 'party ' + data.actionAddsong);
     });
   }, //Called after template has been rendered - put jQuery plugin calls here

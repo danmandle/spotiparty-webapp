@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Artist</th>
+      <th>pictureUrl</th>
+      <th>UserName</th>
+    </tr>
+  </thead>
+  <tbody>
+{{#each songs}}
+      <tr>
+        <td data-songId="{{songId}}">{{songName}}</td>
+        <td>{{user.picture}}</td>
+        <td>{{user.name}}</td>
+      </tr>
+  </tbody>
+</table>
+{{/each}}

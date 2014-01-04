@@ -13,14 +13,14 @@ function getUrlVars()
 
 Hull.component({
   datasources: {songs: function() {return this.getSongs();}}, //List data sources you want to use here
-  templates: ['results'], //Declare the template names you use here
+  templates: ['list-songs-in-party'], //Declare the template names you use here
   refreshEvents: ['search.refresh'],
   initialize: function () {
     this.partyId = getUrlVars()['id'] || false;
 
     this._filter = Hull.util._.filter;
 
-    this.sandbox.on('search.find', Hull.util._.bind(this.setTerm, this));
+    // this.sandbox.on('search.find', Hull.util._.bind(this.setTerm, this));
   }, //Called at component initialization
   beforeRender: function (data, errors) {
     console.log('About to render search results with data', data);
@@ -33,7 +33,6 @@ Hull.component({
   /* append your own components methods */
   getSongs: function() {
     console.log('Get Zee songs', arguments);
-    if(!this.searchTerm) return false;
 
     var dfd = Hull.data.deferred();
 
@@ -42,5 +41,7 @@ Hull.component({
         if(trackData.playlist)
         dfd.resolve(trackData.playlist);
       });
+
+    return dfd;
   }
 });
