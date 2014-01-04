@@ -78,6 +78,7 @@ if (!window.called) {
         if (!window.socket.$events) {
           window.socket.on('connect', function() {
 
+
             window.socket.post('/user/subscribe', app.data.api.model('me').attributes, function(response) {
               console.log('window.socket Post Response ', 'User', response);
               Hull.emit('online.users.change', response);
@@ -116,10 +117,33 @@ if (!window.called) {
       online = _.debounce(online);
       offline = _.debounce(offline);
 
-    });
 
-    $('body').on('join.party', function(event, data) {
-      window.location.replace('/search?id=' + data);
+      $('body').on('join.party', function(event, data) {
+        var partyId = data;
+        $.ajax({
+          type: 'GET',
+          url: '/party/' + partyId,
+          success: function(party) {
+            party.users = party.users || [];
+            var user = app.data.api.model('me').attributes;
+            user.extra.socketId = io.sockets[location.protocol + '//' + location.host].sessionid;
+            user.extra.partyId = partyId;
+            party.users.push(user);
+            var promise1 = Hull.data.api('me','put', user);
+            var promise2 = $.ajax({
+              type: 'PUT',
+              url: '/party/' + partyId,
+              data: party
+            });
+
+            $.when(promise1, promise2).then(function() {
+              window.location.replace('/search?id=' + partyId);
+            });
+          }
+        });
+      });
+
+
     });
 
   })();

@@ -15,11 +15,9 @@ module.exports = {
     */
   },
 
-//  afterCreate: function(values, next) {
-//    console.log('PUb create');
-//    this.User.publishCreate(values);
-//    console.log('After Create')
-//    next();
-//  }
+ beforeDestroy: function(user, cb) {
+  console.log('DELETING USER', user);
+  // Party.find({})
+ }
 
 };
