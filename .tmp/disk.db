@@ -2,34 +2,132 @@
   "data": {
     "party": [
       {
-        "partyName": "Brian's Party (Kill em)",
-        "user": "f94635a601699508b232c05b2b5d85ed50dea561",
-        "lat": "39.739303364476825",
-        "long": "-104.97984766960144",
-        "radius": "110",
-        "playlist": [],
-        "createdAt": "2013-12-21T22:27:52.485Z",
-        "updatedAt": "2014-01-04T07:13:31.193Z",
-        "id": 1
-      },
-      {
-        "partyName": "BoomBox",
-        "user": "",
-        "lat": "40.014846448306976",
-        "long": "-105.26926875114441",
-        "radius": "1005",
-        "playlist": [],
-        "createdAt": "2014-01-03T05:11:23.656Z",
-        "updatedAt": "2014-01-03T05:11:23.656Z",
-        "id": 5
-      },
-      {
-        "partyName": "Palms",
+        "partyName": "Palms1",
         "user": "",
         "lat": "36.1137487353057",
         "long": "-115.19851684570312",
-        "radius": "1205",
+        "radius": "1405",
         "playlist": [
+          {
+            "songId": "spotify:track:4WMuY659P2MKnoW40oGXe8",
+            "user": {
+              "id": "52893961dcaca5e0950001f1",
+              "updated_at": "2013-12-10T19:57:32Z",
+              "created_at": "2013-11-17T21:47:13Z",
+              "name": "Shane McDermed",
+              "description": "",
+              "stats": {
+                "sign_in_count": "73"
+              },
+              "picture": "http://graph.facebook.com/1620760293/picture",
+              "type": "user",
+              "approved": "false",
+              "email": "shmcdermed@gmail.com",
+              "is_admin": "false",
+              "main_identity": "facebook",
+              "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
+              "identities": [
+                {
+                  "id": "52893961dcaca5e0950001f0",
+                  "created_at": "2013-11-17T21:47:13Z",
+                  "name": "Shane McDermed",
+                  "description": "",
+                  "picture": "http://graph.facebook.com/1620760293/picture",
+                  "type": "facebook_account",
+                  "provider": "facebook",
+                  "uid": "1620760293",
+                  "login": "shane.mcdermed",
+                  "email": "shmcdermed@gmail.com",
+                  "first_name": "Shane",
+                  "last_name": "McDermed",
+                  "gender": "male"
+                }
+              ],
+              "_id": "me"
+            },
+            "songName": "Purple Yellow Red and Blue",
+            "artist": "Portugal. The Man"
+          },
+          {
+            "songId": "spotify:track:4WMuY659P2MKnoW40oGXe8",
+            "user": {
+              "id": "52893961dcaca5e0950001f1",
+              "updated_at": "2013-12-10T19:57:32Z",
+              "created_at": "2013-11-17T21:47:13Z",
+              "name": "Shane McDermed",
+              "description": "",
+              "stats": {
+                "sign_in_count": "73"
+              },
+              "picture": "http://graph.facebook.com/1620760293/picture",
+              "type": "user",
+              "approved": "false",
+              "email": "shmcdermed@gmail.com",
+              "is_admin": "false",
+              "main_identity": "facebook",
+              "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
+              "identities": [
+                {
+                  "id": "52893961dcaca5e0950001f0",
+                  "created_at": "2013-11-17T21:47:13Z",
+                  "name": "Shane McDermed",
+                  "description": "",
+                  "picture": "http://graph.facebook.com/1620760293/picture",
+                  "type": "facebook_account",
+                  "provider": "facebook",
+                  "uid": "1620760293",
+                  "login": "shane.mcdermed",
+                  "email": "shmcdermed@gmail.com",
+                  "first_name": "Shane",
+                  "last_name": "McDermed",
+                  "gender": "male"
+                }
+              ],
+              "_id": "me"
+            },
+            "songName": "Purple Yellow Red and Blue",
+            "artist": "Portugal. The Man"
+          },
+          {
+            "songId": "spotify:track:3dyHvTXrfU6wZbuxl6h3H3",
+            "user": {
+              "id": "52893961dcaca5e0950001f1",
+              "updated_at": "2013-12-10T19:57:32Z",
+              "created_at": "2013-11-17T21:47:13Z",
+              "name": "Shane McDermed",
+              "description": "",
+              "stats": {
+                "sign_in_count": "73"
+              },
+              "picture": "http://graph.facebook.com/1620760293/picture",
+              "type": "user",
+              "approved": "false",
+              "email": "shmcdermed@gmail.com",
+              "is_admin": "false",
+              "main_identity": "facebook",
+              "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
+              "identities": [
+                {
+                  "id": "52893961dcaca5e0950001f0",
+                  "created_at": "2013-11-17T21:47:13Z",
+                  "name": "Shane McDermed",
+                  "description": "",
+                  "picture": "http://graph.facebook.com/1620760293/picture",
+                  "type": "facebook_account",
+                  "provider": "facebook",
+                  "uid": "1620760293",
+                  "login": "shane.mcdermed",
+                  "email": "shmcdermed@gmail.com",
+                  "first_name": "Shane",
+                  "last_name": "McDermed",
+                  "gender": "male"
+                }
+              ],
+              "_id": "me"
+            },
+            "songName": "Här Kommer Alla Känslorna (På En Och Samma Gång)",
+            "artist": "Per Gessle"
+          },
           {
             "songId": "spotify:track:0ScgmigVOJr2mFsAtwFQmz",
             "user": {
@@ -66,10 +164,12 @@
                 }
               ],
               "_id": "me"
-            }
+            },
+            "songName": "Fight Test",
+            "artist": "The Flaming Lips"
           },
           {
-            "songId": "spotify:track:2nnblnAtbPnpAaPJZJgAMx",
+            "songId": "spotify:track:3tdXCwXPkCMsYpFQk3eeka",
             "user": {
               "id": "52893961dcaca5e0950001f1",
               "updated_at": "2013-12-10T19:57:32Z",
@@ -104,10 +204,12 @@
                 }
               ],
               "_id": "me"
-            }
+            },
+            "songName": "The Derp Song",
+            "artist": "Derp Brothers"
           },
           {
-            "songId": "spotify:track:6vrUTGn5p8IrfTZ0J6sIVM",
+            "songId": "spotify:track:1rydnXY9kvDNjhnjNOb2if",
             "user": {
               "id": "52893961dcaca5e0950001f1",
               "updated_at": "2013-12-10T19:57:32Z",
@@ -142,173 +244,18 @@
                 }
               ],
               "_id": "me"
-            }
-          },
-          {
-            "songId": "spotify:track:1G8jae4jD8mwkXdodqHsBM",
-            "user": {
-              "id": "52893961dcaca5e0950001f1",
-              "updated_at": "2013-12-10T19:57:32Z",
-              "created_at": "2013-11-17T21:47:13Z",
-              "name": "Shane McDermed",
-              "description": "",
-              "stats": {
-                "sign_in_count": "73"
-              },
-              "picture": "http://graph.facebook.com/1620760293/picture",
-              "type": "user",
-              "approved": "false",
-              "email": "shmcdermed@gmail.com",
-              "is_admin": "false",
-              "main_identity": "facebook",
-              "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
-              "identities": [
-                {
-                  "id": "52893961dcaca5e0950001f0",
-                  "created_at": "2013-11-17T21:47:13Z",
-                  "name": "Shane McDermed",
-                  "description": "",
-                  "picture": "http://graph.facebook.com/1620760293/picture",
-                  "type": "facebook_account",
-                  "provider": "facebook",
-                  "uid": "1620760293",
-                  "login": "shane.mcdermed",
-                  "email": "shmcdermed@gmail.com",
-                  "first_name": "Shane",
-                  "last_name": "McDermed",
-                  "gender": "male"
-                }
-              ],
-              "_id": "me"
-            }
-          },
-          {
-            "songId": "spotify:track:6vrUTGn5p8IrfTZ0J6sIVM",
-            "user": {
-              "id": "52893961dcaca5e0950001f1",
-              "updated_at": "2013-12-10T19:57:32Z",
-              "created_at": "2013-11-17T21:47:13Z",
-              "name": "Shane McDermed",
-              "description": "",
-              "stats": {
-                "sign_in_count": "73"
-              },
-              "picture": "http://graph.facebook.com/1620760293/picture",
-              "type": "user",
-              "approved": "false",
-              "email": "shmcdermed@gmail.com",
-              "is_admin": "false",
-              "main_identity": "facebook",
-              "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
-              "identities": [
-                {
-                  "id": "52893961dcaca5e0950001f0",
-                  "created_at": "2013-11-17T21:47:13Z",
-                  "name": "Shane McDermed",
-                  "description": "",
-                  "picture": "http://graph.facebook.com/1620760293/picture",
-                  "type": "facebook_account",
-                  "provider": "facebook",
-                  "uid": "1620760293",
-                  "login": "shane.mcdermed",
-                  "email": "shmcdermed@gmail.com",
-                  "first_name": "Shane",
-                  "last_name": "McDermed",
-                  "gender": "male"
-                }
-              ],
-              "_id": "me"
-            }
-          },
-          {
-            "songId": "spotify:track:2IRK3qdY6BzbKxKr8eBk8o",
-            "user": {
-              "id": "52893961dcaca5e0950001f1",
-              "updated_at": "2013-12-10T19:57:32Z",
-              "created_at": "2013-11-17T21:47:13Z",
-              "name": "Shane McDermed",
-              "description": "",
-              "stats": {
-                "sign_in_count": "73"
-              },
-              "picture": "http://graph.facebook.com/1620760293/picture",
-              "type": "user",
-              "approved": "false",
-              "email": "shmcdermed@gmail.com",
-              "is_admin": "false",
-              "main_identity": "facebook",
-              "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
-              "identities": [
-                {
-                  "id": "52893961dcaca5e0950001f0",
-                  "created_at": "2013-11-17T21:47:13Z",
-                  "name": "Shane McDermed",
-                  "description": "",
-                  "picture": "http://graph.facebook.com/1620760293/picture",
-                  "type": "facebook_account",
-                  "provider": "facebook",
-                  "uid": "1620760293",
-                  "login": "shane.mcdermed",
-                  "email": "shmcdermed@gmail.com",
-                  "first_name": "Shane",
-                  "last_name": "McDermed",
-                  "gender": "male"
-                }
-              ],
-              "_id": "me"
-            }
+            },
+            "songName": "Swerve",
+            "artist": "Sage The Gemini"
           }
         ],
-        "createdAt": "2014-01-04T01:18:01.898Z",
-        "updatedAt": "2014-01-04T07:07:59.286Z",
-        "id": 6
+        "createdAt": "2014-01-04T08:46:41.671Z",
+        "updatedAt": "2014-01-04T17:26:15.243Z",
+        "id": 12
       }
     ],
     "search": [],
     "user": [
-      {
-        "id": "52a7714b00ca193fe20009b6",
-        "updated_at": "2013-12-10T19:53:48Z",
-        "created_at": "2013-12-10T19:53:47Z",
-        "name": "Brian Shaffer",
-        "description": null,
-        "extra": {},
-        "stats": {
-          "sign_in_count": 1
-        },
-        "tags": [],
-        "picture": "http://graph.facebook.com/1363920046/picture",
-        "type": "user",
-        "approved": false,
-        "profile": {},
-        "email": null,
-        "is_admin": false,
-        "main_identity": "facebook",
-        "access_token": "1183d97a3a3c6f64137ed2bec246d08ab54bef295b94b088037bd84be30dcce5",
-        "identities": [
-          {
-            "id": "52a7714b00ca193fe20009b5",
-            "created_at": "2013-12-10T19:53:47Z",
-            "name": "Brian Shaffer",
-            "description": null,
-            "stats": {},
-            "tags": [],
-            "picture": "http://graph.facebook.com/1363920046/picture",
-            "type": "facebook_account",
-            "provider": "facebook",
-            "uid": "1363920046",
-            "login": "brianshaffer",
-            "email": null,
-            "first_name": "Brian",
-            "last_name": "Shaffer"
-          }
-        ],
-        "_id": "me",
-        "socketId": "9ZPRDoeapdZP66IsthDT",
-        "__timestamp": 1388818843620,
-        "createdAt": "2014-01-04T07:00:43.620Z",
-        "updatedAt": "2014-01-04T07:00:43.620Z"
-      },
       {
         "id": "52893961dcaca5e0950001f1",
         "updated_at": "2013-12-10T19:57:32Z",
@@ -348,10 +295,10 @@
           }
         ],
         "_id": "me",
-        "socketId": "wv47FOjqVB7LCzPpGToJ",
-        "__timestamp": 1388819763923,
-        "createdAt": "2014-01-04T07:16:03.923Z",
-        "updatedAt": "2014-01-04T07:16:03.923Z"
+        "socketId": "uTTzGA9rUEDDNHYPPcSi",
+        "__timestamp": 1388856359341,
+        "createdAt": "2014-01-04T17:25:59.341Z",
+        "updatedAt": "2014-01-04T17:25:59.341Z"
       }
     ]
   },
@@ -410,7 +357,7 @@
   },
   "counters": {
     "party": {
-      "id": 6
+      "id": 12
     },
     "search": {},
     "user": {}

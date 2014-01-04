@@ -66,6 +66,10 @@ function program1(depth0,data) {
   else { stack1 = (depth0 && depth0.songId); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
   buffer += escapeExpression(stack1)
     + "\">";
+  if (stack1 = helpers.artist) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = (depth0 && depth0.artist); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "</td>\n        <td>";
   if (stack1 = helpers.songName) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = (depth0 && depth0.songName); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
   buffer += escapeExpression(stack1)
@@ -77,7 +81,7 @@ function program1(depth0,data) {
   return buffer;
   }
 
-  buffer += "<table>\n  <thead>\n    <tr>\n      <th>Artist</th>\n      <th>pictureUrl</th>\n      <th>UserName</th>\n    </tr>\n  </thead>\n  <tbody>\n";
+  buffer += "<table>\n  <thead>\n    <tr>\n      <th>Artist</th>\n      <th>Song Name</th>\n      <th>pictureUrl</th>\n      <th>UserName</th>\n    </tr>\n  </thead>\n  <tbody>\n";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.songs), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n</tbody>\n</table>";

@@ -14,7 +14,7 @@ function getUrlVars()
 Hull.component({
   datasources: {songs: function() {return this.getSongs();}}, //List data sources you want to use here
   templates: ['list-songs-in-party'], //Declare the template names you use here
-  refreshEvents: ['search.refresh'],
+  refreshEvents: ['party.change'],
   initialize: function () {
     this.partyId = getUrlVars()['id'] || false;
 

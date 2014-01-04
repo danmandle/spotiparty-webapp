@@ -67,7 +67,7 @@ module.exports = {
         console.log('User adding playlist', user.playlist);
         if(track) {
           user.playlist = user.playlist.filter(function(t) {
-            return t.songId !== track;
+            return t !== track;
           }, this);
           user.save(function(err) {
             if(err) return res.send(500);

@@ -2,6 +2,7 @@ if (!window.called) {
   window.called = true;
   (function() {
     require.config({
+      waitSeconds: 20,
       paths: {
         underscore: 'bower_components/underscore/underscore-min',
         Hull: '//d3f5pyioow99x0.cloudfront.net/0.7.9/hull',
@@ -82,13 +83,12 @@ if (!window.called) {
               Hull.emit('online.users.change', response);
             });
 
-            window.socket.post('/parties/subscribe', {}, function(response) {
+            window.socket.get('/party', {}, function(response) {
               console.log('window.socket Post Response', 'Party', response);
-              Hull.emit('party.change', response);
+              // Hull.emit('party.change', response);
             });
 
             window.socket.on('message', function(msg) {
-              // alert('zola');
               switch (msg.model) {
                 case 'user':
                   Hull.emit('online.users.change', msg);
