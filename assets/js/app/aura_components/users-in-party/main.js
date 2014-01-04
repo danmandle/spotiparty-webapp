@@ -7,6 +7,6 @@ Hull.component({
   }, //Called at component initialization
   beforeRender: function (data, errors) {}, //Called after datasources are resolved
   afterRender: function () {
-    alert('refresh')
+    // alert('refresh')
   }, //Called after template has been rendered - put jQuery plugin calls here
 });
