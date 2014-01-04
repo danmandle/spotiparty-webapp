@@ -55,10 +55,13 @@ Hull.component({
     console.log('Get Zee songs', arguments);
     if(!this.searchTerm) return false;
 
+    var img = $('<img class="loading" src="/gumby/img/loading.gif">').appendTo(this.$el);
+
     var dfd = Hull.data.deferred();
 
     return $.getJSON('http://ws.spotify.com/search/1/track.json?q=' + this.searchTerm,
       function(trackData) {
+	img.remove();
         dfd.resolve(trackData);
       });
   },
@@ -89,7 +92,8 @@ Hull.component({
       user: this.data.me.attributes,
       songName: songName,
       artist: artist,
-      albumName: album
+      albumName: album,
+      votes: 0
     });
     $.ajax({
       url: '/party/' + this.partyId,

@@ -26,6 +26,17 @@ module.exports = {
    */
   _config: {},
 
+  vote: function(req, res) {
+    var usr = req.param('user');
+    Party.findOne({user: usr})
+      .done(function(err, party) {
+	if(err) return res.send(500);
+	if(!party) return res.send(404);
+
+	var track = req.param('track');
+      })
+  },
+
   addToPlaylist: function(req, res) {
     // nececito uno spotify id in post
     var usr = req.param('user');
