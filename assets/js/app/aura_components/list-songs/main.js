@@ -44,7 +44,7 @@ Hull.component({
     $('[data-action-addSong]').on('click', function() {
       var elem = $(this);
       data = elem.data();
-      self.addToParty(data.actionAddsong, data.songid, data.songname);
+      self.addToParty(data.actionAddsong, data.songid, data.songname, data.artist);
       console.log('Adding song', data.songid, 'to', 'party ' + data.actionAddsong);
     });
   }, //Called after template has been rendered - put jQuery plugin calls here
@@ -80,12 +80,13 @@ Hull.component({
     });
   },
 
-  addToParty: function(partyId, songId, songName) {
+  addToParty: function(partyId, songId, songName, artist) {
     var newParty = this.party;
     this.party.playlist.push({
       songId: songId,
       user: this.data.me.attributes,
-      songName: songName
+      songName: songName,
+      artist: artist
     });
     $.ajax({
       url: '/party/' + this.partyId,

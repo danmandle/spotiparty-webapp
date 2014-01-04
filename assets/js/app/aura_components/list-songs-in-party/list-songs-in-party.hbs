@@ -2,6 +2,7 @@
   <thead>
     <tr>
       <th>Artist</th>
+      <th>Song Name</th>
       <th>pictureUrl</th>
       <th>UserName</th>
     </tr>
@@ -9,7 +10,8 @@
   <tbody>
 {{#each songs}}
       <tr>
-        <td data-songId="{{songId}}">{{songName}}</td>
+        <td data-songId="{{songId}}">{{artist}}</td>
+        <td>{{songName}}</td>
         <td>{{user.picture}}</td>
         <td>{{user.name}}</td>
       </tr>
