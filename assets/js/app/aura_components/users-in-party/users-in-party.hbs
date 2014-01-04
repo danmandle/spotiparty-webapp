@@ -1,5 +1,10 @@
-{{me.name}}
-
+{{!-- {{me.name}}
+ --}}
+ <ul class="usersAtParty">
 {{#each users}}
-<li>{{this.name}} - {{this.id}}</li>
+<li>
+	<img src="{{this.picture}}" class="profilePhoto" />
+	{{this.name}}
+</li>
 {{/each}}
+</ul>

@@ -2603,3 +2603,9 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .searchResults .withPhoto .voting { float: right; padding: 17px 0 0 0; }
 
 .loadingSentance { color: #909999; text-align: center; }
+
+h2.title { font-size: 25px; padding: 10px 0; margin: 20px 0 10px 0; text-align: center; }
+
+.usersAtParty { list-style-type: none; }
+.usersAtParty li { border-bottom: solid 1px #4B4B4B; padding: 10px 0; font-size: 12px; width: 200px; }
+.usersAtParty li img { width: 30px; height: 30px; vertical-align: middle; margin-right: 10px; }

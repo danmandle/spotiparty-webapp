@@ -63,3 +63,25 @@
 	color: #909999;
 	text-align: center;
 }
+h2.title {
+	font-size: 25px;
+	padding: 10px 0;
+	margin: 20px 0 10px 0;
+	text-align: center;
+}
+.usersAtParty {
+	list-style-type: none;
+	li {
+		border-bottom: solid 1px #4B4B4B;
+		padding: 10px 0;
+		font-size: 12px;
+		width: 200px;
+		float: left;
+		img {
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
+}
