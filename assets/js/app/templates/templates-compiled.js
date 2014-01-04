@@ -68,7 +68,7 @@ function program1(depth0,data) {
     + "\">\n      <div class=\"order\">\n      ";
   stack2 = helpers['if'].call(depth0, ((stack1 = data),stack1 == null || stack1 === false ? stack1 : stack1.index), {hash:{},inverse:self.program(4, program4, data),fn:self.program(2, program2, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "\n    </div>\n      <img src=\""
+  buffer += "\n    </div>\n    <div class=\"voting\">\n      <a href=\"#\" class=\"up\">+</a>\n      <a href=\"#\" class=\"down\">-</a>\n    </div>\n      <img src=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.user)),stack1 == null || stack1 === false ? stack1 : stack1.picture)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\" alt=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.user)),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
