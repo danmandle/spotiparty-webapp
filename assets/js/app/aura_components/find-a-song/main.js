@@ -7,6 +7,12 @@ Hull.component({
   beforeRender: function (data, errors) {}, //Called after datasources are resolved
   afterRender: function () {
     var self = this;
+    this.$el.find('#search-input').on('keyup', function(e) {
+      var code = e.keyCode || e.which;
+       if(code == 13) { //Enter keycode
+          self.triggerSearchCall(self.$el.find('#search-input'));
+       }
+    });
     this.$el.find('[data-action="search"]').on('click', function(evt) {
       evt.preventDefault();
 
