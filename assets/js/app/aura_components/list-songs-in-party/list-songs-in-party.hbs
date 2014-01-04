@@ -1,7 +1,18 @@
 <div class="searchResults">
   {{#each songs}}
-    <div class="searchResult" data-songId="{{songId}}">
-      <img src="{{user.picture}}" alt="{{user.name}}" />
+    <div class="searchResult withPhoto" data-songId="{{songId}}">
+      <div class="order">
+      {{#if @index}}
+        {{@index}}.
+      {{else}}
+        Current
+      {{/if}}
+    </div>
+    <div class="voting">
+      <a href="#" class="up">+</a>
+      <a href="#" class="down">-</a>
+    </div>
+      <img src="{{user.picture}}" alt="{{user.name}}" class="userPhoto" />
       <h2>{{songName}}</h2>
       <h3>{{artist}} &bull; {{albumName}}</h3>
     </div>

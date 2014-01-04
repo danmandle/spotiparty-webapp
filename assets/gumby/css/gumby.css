@@ -2596,3 +2596,6 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .searchResults h2 { font-size: 12px; }
 .searchResults h3 { font-size: 10px; font-weight: normal; color: #909999; }
 .searchResults .wide { width: 80%; }
+.searchResults .userPhoto { float: left; width: 50px; height: 50px; }
+.searchResults .withPhoto .order { float: left; width: 50px; font-size: 30px; color: #FFF; font-weight: bold; }
+.searchResults .withPhoto h2, .searchResults .withPhoto h3 { margin-left: 110px; }

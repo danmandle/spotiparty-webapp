@@ -1,6 +1,6 @@
 <div class="searchResults">
   {{#each songs.tracks}}
-    <div class="searchResult" data-action-addSong="{{../party.id}}" data-songId="{{href}}" data-songName="{{name}}" data-artist="{{artists.0.name}}">
+    <div class="searchResult" data-action-addSong="{{../party.id}}" data-songId="{{href}}" data-songName="{{name}}" data-artist="{{artists.0.name}}" data-album-name="{{album.name}}">
       <h2>{{name}}</h2>
       <h3>{{artists.0.name}} &bull; {{album.name}}</h3>
     </div>

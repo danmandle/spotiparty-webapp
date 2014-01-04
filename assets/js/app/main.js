@@ -1,3 +1,5 @@
+
+
 if (!window.called) {
   window.called = true;
   (function() {
@@ -62,11 +64,13 @@ if (!window.called) {
         console.log('Subscribing tod socket');
 
         if(window.location.pathname === '/') {
-          if(user.extra.partyId) {
-            window.location.replace('/search');
-          }else {
+          if(Hull.me) {
             window.location.replace('/parties');
           }
+        }
+
+        if(window.location.pathname === '/search' && Hull.me && !Hull.me.attributes.extra.partyId) {
+          window.location.replace('/partyId');
         }
 
         if (window.socket) {
@@ -113,6 +117,7 @@ if (!window.called) {
           socket.disconnect();
         }
       };
+
 
       online = _.debounce(online);
       offline = _.debounce(offline);

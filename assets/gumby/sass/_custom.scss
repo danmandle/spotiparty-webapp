@@ -34,4 +34,22 @@
 	.wide {
 		width: 80%;
 	}
+	.userPhoto {
+		float: left;
+		width: 50px;
+		height: 50px;
+	}
+	.withPhoto {
+		.order {
+			float: left;
+			width: 50px;
+			font-size: 30px;
+			color: #FFF;
+			font-weight: bold;
+		}
+		h2, h3 {
+			margin-left: 110px;
+		}
+
+	}
 }
