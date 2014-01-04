@@ -315,10 +315,55 @@
             },
             "songName": "Want You Gone",
             "artist": "Aperture Science Psychoacoustic Laboratories"
+          },
+          {
+            "songId": "spotify:track:5Hp1ogtCXDVefDiCGPTlwv",
+            "user": {
+              "id": "52893961dcaca5e0950001f1",
+              "updated_at": "2014-01-04T21:29:35Z",
+              "created_at": "2013-11-17T21:47:13Z",
+              "name": "Shane McDermed",
+              "description": "",
+              "extra": {
+                "socketId": "c6uOJd1XZ9hf4B45-if4",
+                "partyId": "1"
+              },
+              "stats": {
+                "sign_in_count": "74"
+              },
+              "picture": "http://graph.facebook.com/1620760293/picture",
+              "type": "user",
+              "approved": "false",
+              "email": "shmcdermed@gmail.com",
+              "is_admin": "false",
+              "main_identity": "facebook",
+              "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
+              "identities": [
+                {
+                  "id": "52893961dcaca5e0950001f0",
+                  "created_at": "2013-11-17T21:47:13Z",
+                  "name": "Shane McDermed",
+                  "description": "",
+                  "picture": "http://graph.facebook.com/1620760293/picture",
+                  "type": "facebook_account",
+                  "provider": "facebook",
+                  "uid": "1620760293",
+                  "login": "shane.mcdermed",
+                  "email": "shmcdermed@gmail.com",
+                  "first_name": "Shane",
+                  "last_name": "McDermed",
+                  "gender": "male"
+                }
+              ],
+              "_id": "me"
+            },
+            "songName": "Wayho",
+            "artist": "SDL Music",
+            "albumName": "Red Zone"
           }
         ],
         "createdAt": "2014-01-04T20:00:32.007Z",
-        "updatedAt": "2014-01-04T21:29:34.483Z",
+        "updatedAt": "2014-01-04T21:33:19.494Z",
         "id": 1,
         "users": [
           {
@@ -560,10 +605,10 @@
           }
         ],
         "_id": "me",
-        "socketId": "YnSXQupm4pAlyUnV-if5",
-        "__timestamp": 1388870976390,
-        "createdAt": "2014-01-04T21:29:36.390Z",
-        "updatedAt": "2014-01-04T21:29:36.390Z",
+        "socketId": "n9W8mvo-6tAqUfWa-if7",
+        "__timestamp": 1388871231196,
+        "createdAt": "2014-01-04T21:33:51.197Z",
+        "updatedAt": "2014-01-04T21:33:51.197Z",
         "false": {
           "parse": true
         }
