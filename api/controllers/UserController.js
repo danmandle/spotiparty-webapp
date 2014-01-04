@@ -33,6 +33,23 @@ module.exports = {
     });
   },
 
+  atParty: function(req, res) {
+    partyId = parseInt(req.param('partyId'), 10);
+    console.log('Getting user at party', partyId);
+    User.find().done(function(err, users) {
+      if (err) res.send(err, 500);
+
+      console.log('Looking for party in users before filter', users);
+      users = users.filter(function(user) {
+        console.log(user.extra.partyId === partyId, user.extra.partyId, partyId)
+        return user.extra.partyId === partyId;
+      });
+      console.log('Looking for party in users after filter', users);
+
+      res.json(users);
+    });
+  },
+
 /*Subscribes all users to the requesting socket.*/
   subscribe: function(req, res) {
     User.subscribe(req.socket);

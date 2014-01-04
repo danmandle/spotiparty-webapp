@@ -16,7 +16,7 @@ Hull.component({
   templates: ['list-songs-in-party'], //Declare the template names you use here
   refreshEvents: ['party.change'],
   initialize: function () {
-    this.partyId = getUrlVars()['id'] || false;
+    this.partyId = getUrlVars()['id'] || this.api.model('me').attributes.extra.partyId;
 
     this._filter = Hull.util._.filter;
 

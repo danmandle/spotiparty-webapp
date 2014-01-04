@@ -16,7 +16,7 @@ Hull.component({
   templates: ['results'], //Declare the template names you use here
   refreshEvents: ['search.refresh'],
   initialize: function () {
-    this.partyId = getUrlVars()['id'] || false;
+    this.partyId = getUrlVars()['id'] || this.api.model('me').attributes.extra.partyId;
 
     this.getParty(this.partyId);
     this._filter = Hull.util._.filter;
