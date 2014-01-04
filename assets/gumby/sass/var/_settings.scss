@@ -3,9 +3,9 @@
 // custom colors
 $darkGrey: #313131;
 $lightGrey: #4a4a4a;
-$darkGreen: #329557;
-$middleGreen: #3ebd6d;
-$lightGreen: #61cd89;
+$darkGreen: #0b3502;
+$middleGreen: #78a301;
+$lightGreen: #a0c132;
 
 
 
@@ -85,7 +85,7 @@ $body-link-hover-color:  $darkGreen !default;
 // User Interface Colors
 $global-bg-color: $darkGrey; // custom
 $navbar-color: #4a4d50;
-$navbar-link-color: $middleGreen; // custom
+$navbar-link-color: #FFF; // custom
 $primary-color: $lightGreen; // custom
 $secondary-color: $darkGreen;
 $default-color: #f2f2f2;
@@ -96,7 +96,7 @@ $success-color: #58c026;
 $primary-hover-color: $middleGreen;
 $secondary-hover-color: #6dbb80;
 $default-hover-color: #ffffff;
-$info-hover-color: #d2f2a4;
+$info-hover-color: #FFF; // BS
 $danger-hover-color: #f14f4f;
 $warning-hover-color: #fdd27f;
 $success-hover-color: #66d92f;
