@@ -142,7 +142,7 @@ if (!window.called) {
             });
 
             $.when(promise1, promise2).then(function() {
-              window.location.replace('/search?id=' + partyId);
+              window.location.replace('/search');
             });
           }
         });
