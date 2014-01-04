@@ -1,20 +1,9 @@
-<table>
-  <thead>
-    <tr>
-      <th>Artist</th>
-      <th>Song Name</th>
-      <th>pictureUrl</th>
-      <th>UserName</th>
-    </tr>
-  </thead>
-  <tbody>
-{{#each songs}}
-      <tr>
-        <td data-songId="{{songId}}">{{artist}}</td>
-        <td>{{songName}}</td>
-        <td>{{user.picture}}</td>
-        <td>{{user.name}}</td>
-      </tr>
-{{/each}}
-</tbody>
-</table>
+<div class="searchResults">
+  {{#each songs}}
+    <div class="searchResult" data-songId="{{songId}}">
+      <img src="{{user.picture}}" alt="{{user.name}}" />
+      <h2>{{songName}}</h2>
+      <h3>{{artist}} &bull; {{albumName}}</h3>
+    </div>
+  {{/each}}
+</div>

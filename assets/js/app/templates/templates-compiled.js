@@ -60,31 +60,31 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 
 function program1(depth0,data) {
   
-  var buffer = "", stack1;
-  buffer += "\n      <tr>\n        <td data-songId=\"";
+  var buffer = "", stack1, stack2;
+  buffer += "\n    <div class=\"searchResult\" data-songId=\"";
   if (stack1 = helpers.songId) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = (depth0 && depth0.songId); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
   buffer += escapeExpression(stack1)
-    + "\">";
-  if (stack1 = helpers.artist) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = (depth0 && depth0.artist); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "</td>\n        <td>";
-  if (stack1 = helpers.songName) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = (depth0 && depth0.songName); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "</td>\n        <td>"
+    + "\">\n      <img src=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.user)),stack1 == null || stack1 === false ? stack1 : stack1.picture)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</td>\n        <td>"
+    + "\" alt=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.user)),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</td>\n      </tr>\n";
+    + "\" />\n      <h2>";
+  if (stack2 = helpers.songName) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = (depth0 && depth0.songName); stack2 = typeof stack2 === functionType ? stack2.call(depth0, {hash:{},data:data}) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "</h2>\n      <h3>";
+  if (stack2 = helpers.artist) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = (depth0 && depth0.artist); stack2 = typeof stack2 === functionType ? stack2.call(depth0, {hash:{},data:data}) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "</h3>\n    </div>\n  ";
   return buffer;
   }
 
-  buffer += "<table>\n  <thead>\n    <tr>\n      <th>Artist</th>\n      <th>Song Name</th>\n      <th>pictureUrl</th>\n      <th>UserName</th>\n    </tr>\n  </thead>\n  <tbody>\n";
+  buffer += "<div class=\"searchResults\">\n  ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.songs), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n</tbody>\n</table>";
+  buffer += "\n</div>";
   return buffer;
   });
 
@@ -120,7 +120,7 @@ function program1(depth0,data,depth1) {
   return buffer;
   }
 
-  buffer += "<div id=\"searchResults\">\n  ";
+  buffer += "<div class=\"searchResults\">\n  ";
   stack2 = helpers.each.call(depth0, ((stack1 = (depth0 && depth0.songs)),stack1 == null || stack1 === false ? stack1 : stack1.tracks), {hash:{},inverse:self.noop,fn:self.programWithDepth(1, program1, data, depth0),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "\n</div>";
