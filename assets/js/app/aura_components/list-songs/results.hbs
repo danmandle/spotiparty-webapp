@@ -8,7 +8,7 @@
   </thead>
   <tbody>
     {{#each songs.tracks}}
-      <tr data-action-addSong="{{../party.id}}" data-songId="{{href}}">
+      <tr data-action-addSong="{{../party.id}}" data-songId="{{href}}" data-songName="{{artists.0.name}}">
         <td>{{artists.0.name}}</td>
         <td>{{name}}</td>
         <td>{{album.name}}</td>
