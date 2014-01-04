@@ -259,13 +259,13 @@
     "user": [
       {
         "id": "52a7714b00ca193fe20009b6",
-        "updated_at": "2013-12-10T19:53:48Z",
+        "updated_at": "2014-01-04T19:34:55Z",
         "created_at": "2013-12-10T19:53:47Z",
         "name": "Brian Shaffer",
         "description": null,
         "extra": {},
         "stats": {
-          "sign_in_count": 1
+          "sign_in_count": 2
         },
         "tags": [],
         "picture": "http://graph.facebook.com/1363920046/picture",
@@ -289,16 +289,16 @@
             "provider": "facebook",
             "uid": "1363920046",
             "login": "brianshaffer",
-            "email": null,
+            "email": "brian@brianshaffer.com",
             "first_name": "Brian",
             "last_name": "Shaffer"
           }
         ],
         "_id": "me",
-        "socketId": "hX0jEYXDpAvK7glxmAEw",
-        "__timestamp": 1388861537081,
-        "createdAt": "2014-01-04T18:52:17.083Z",
-        "updatedAt": "2014-01-04T18:52:17.085Z"
+        "socketId": "lz-MMASXbTneYnZq0dlQ",
+        "__timestamp": 1388865275765,
+        "createdAt": "2014-01-04T19:54:35.765Z",
+        "updatedAt": "2014-01-04T19:54:35.765Z"
       }
     ]
   },
