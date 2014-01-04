@@ -40,16 +40,26 @@
 		height: 50px;
 	}
 	.withPhoto {
+		min-height: 70px;
 		.order {
 			float: left;
 			width: 50px;
 			font-size: 30px;
 			color: #FFF;
 			font-weight: bold;
+			text-align: center;
+			line-height: 47px;
 		}
 		h2, h3 {
 			margin-left: 110px;
 		}
-
+		.voting {
+			float: right;
+			padding: 17px 0 0 0;
+		}
 	}
+}
+.loadingSentance {
+	color: #909999;
+	text-align: center;
 }
