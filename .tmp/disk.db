@@ -271,10 +271,54 @@
             },
             "songName": "Mmm Mmm Mmm Mmm",
             "artist": "Crash Test Dummies"
+          },
+          {
+            "songId": "spotify:track:0MXUczTe2h2ikFRSPk2ctl",
+            "user": {
+              "id": "52893961dcaca5e0950001f1",
+              "updated_at": "2014-01-04T20:16:22Z",
+              "created_at": "2013-11-17T21:47:13Z",
+              "name": "Shane McDermed",
+              "description": "",
+              "extra": {
+                "socketId": "P2qS--Vs0yGOCI2q4ySz",
+                "partyId": "1"
+              },
+              "stats": {
+                "sign_in_count": "73"
+              },
+              "picture": "http://graph.facebook.com/1620760293/picture",
+              "type": "user",
+              "approved": "false",
+              "email": "shmcdermed@gmail.com",
+              "is_admin": "false",
+              "main_identity": "facebook",
+              "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
+              "identities": [
+                {
+                  "id": "52893961dcaca5e0950001f0",
+                  "created_at": "2013-11-17T21:47:13Z",
+                  "name": "Shane McDermed",
+                  "description": "",
+                  "picture": "http://graph.facebook.com/1620760293/picture",
+                  "type": "facebook_account",
+                  "provider": "facebook",
+                  "uid": "1620760293",
+                  "login": "shane.mcdermed",
+                  "email": "shmcdermed@gmail.com",
+                  "first_name": "Shane",
+                  "last_name": "McDermed",
+                  "gender": "male"
+                }
+              ],
+              "_id": "me"
+            },
+            "songName": "Want You Gone",
+            "artist": "Aperture Science Psychoacoustic Laboratories"
           }
         ],
         "createdAt": "2014-01-04T20:00:32.007Z",
-        "updatedAt": "2014-01-04T20:49:53.570Z",
+        "updatedAt": "2014-01-04T21:29:34.483Z",
         "id": 1,
         "users": [
           {
@@ -390,6 +434,84 @@
               }
             ],
             "_id": "me"
+          },
+          {
+            "id": "52893961dcaca5e0950001f1",
+            "updated_at": "2014-01-04T21:27:01Z",
+            "created_at": "2013-11-17T21:47:13Z",
+            "name": "Shane McDermed",
+            "description": "",
+            "extra": {
+              "socketId": "CDw82l11O_zE_7Nc-if1",
+              "partyId": "1"
+            },
+            "stats": {
+              "sign_in_count": "74"
+            },
+            "picture": "http://graph.facebook.com/1620760293/picture",
+            "type": "user",
+            "approved": "false",
+            "email": "shmcdermed@gmail.com",
+            "is_admin": "false",
+            "main_identity": "facebook",
+            "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
+            "identities": [
+              {
+                "id": "52893961dcaca5e0950001f0",
+                "created_at": "2013-11-17T21:47:13Z",
+                "name": "Shane McDermed",
+                "description": "",
+                "picture": "http://graph.facebook.com/1620760293/picture",
+                "type": "facebook_account",
+                "provider": "facebook",
+                "uid": "1620760293",
+                "login": "shane.mcdermed",
+                "email": "shmcdermed@gmail.com",
+                "first_name": "Shane",
+                "last_name": "McDermed",
+                "gender": "male"
+              }
+            ],
+            "_id": "me"
+          },
+          {
+            "id": "52893961dcaca5e0950001f1",
+            "updated_at": "2014-01-04T21:27:12Z",
+            "created_at": "2013-11-17T21:47:13Z",
+            "name": "Shane McDermed",
+            "description": "",
+            "extra": {
+              "socketId": "c6uOJd1XZ9hf4B45-if4",
+              "partyId": "1"
+            },
+            "stats": {
+              "sign_in_count": "74"
+            },
+            "picture": "http://graph.facebook.com/1620760293/picture",
+            "type": "user",
+            "approved": "false",
+            "email": "shmcdermed@gmail.com",
+            "is_admin": "false",
+            "main_identity": "facebook",
+            "access_token": "790dc3b243ced7a58c533a61f7d3913537da9ae92b7458ce3cc576b85f2a1611",
+            "identities": [
+              {
+                "id": "52893961dcaca5e0950001f0",
+                "created_at": "2013-11-17T21:47:13Z",
+                "name": "Shane McDermed",
+                "description": "",
+                "picture": "http://graph.facebook.com/1620760293/picture",
+                "type": "facebook_account",
+                "provider": "facebook",
+                "uid": "1620760293",
+                "login": "shane.mcdermed",
+                "email": "shmcdermed@gmail.com",
+                "first_name": "Shane",
+                "last_name": "McDermed",
+                "gender": "male"
+              }
+            ],
+            "_id": "me"
           }
         ]
       }
@@ -398,16 +520,16 @@
     "user": [
       {
         "id": "52893961dcaca5e0950001f1",
-        "updated_at": "2014-01-04T20:16:22Z",
+        "updated_at": "2014-01-04T21:29:35Z",
         "created_at": "2013-11-17T21:47:13Z",
         "name": "Shane McDermed",
         "description": null,
         "extra": {
-          "socketId": "P2qS--Vs0yGOCI2q4ySz",
+          "socketId": "c6uOJd1XZ9hf4B45-if4",
           "partyId": 1
         },
         "stats": {
-          "sign_in_count": 73
+          "sign_in_count": 74
         },
         "tags": [],
         "picture": "http://graph.facebook.com/1620760293/picture",
@@ -438,10 +560,13 @@
           }
         ],
         "_id": "me",
-        "socketId": "wFgJz2rZPg4wHE2N-ifr",
-        "__timestamp": 1388868957978,
-        "createdAt": "2014-01-04T20:55:57.978Z",
-        "updatedAt": "2014-01-04T20:55:57.978Z"
+        "socketId": "YnSXQupm4pAlyUnV-if5",
+        "__timestamp": 1388870976390,
+        "createdAt": "2014-01-04T21:29:36.390Z",
+        "updatedAt": "2014-01-04T21:29:36.390Z",
+        "false": {
+          "parse": true
+        }
       },
       {
         "id": "52899f90a1f9df0fdb00036a",
@@ -482,10 +607,10 @@
           }
         ],
         "_id": "me",
-        "socketId": "Q8YqrywhO2OVqDIT-ifo",
-        "__timestamp": 1388868594885,
-        "createdAt": "2014-01-04T20:49:54.885Z",
-        "updatedAt": "2014-01-04T20:49:54.886Z"
+        "socketId": "whX4EU9sPyZM6EJK-ifx",
+        "__timestamp": 1388870491007,
+        "createdAt": "2014-01-04T21:21:31.007Z",
+        "updatedAt": "2014-01-04T21:21:31.007Z"
       }
     ]
   },

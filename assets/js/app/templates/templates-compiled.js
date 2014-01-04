@@ -108,6 +108,8 @@ function program1(depth0,data,depth1) {
   buffer += escapeExpression(stack2)
     + "\" data-artist=\""
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.artists)),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" data-album-name=\""
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.album)),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\">\n      <h2>";
   if (stack2 = helpers.name) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
   else { stack2 = (depth0 && depth0.name); stack2 = typeof stack2 === functionType ? stack2.call(depth0, {hash:{},data:data}) : stack2; }
@@ -123,7 +125,7 @@ function program1(depth0,data,depth1) {
   buffer += "<div id=\"searchResults\">\n  ";
   stack2 = helpers.each.call(depth0, ((stack1 = (depth0 && depth0.songs)),stack1 == null || stack1 === false ? stack1 : stack1.tracks), {hash:{},inverse:self.noop,fn:self.programWithDepth(1, program1, data, depth0),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "\n</div>";
+  buffer += "\n</div>\n";
   return buffer;
   });
 
