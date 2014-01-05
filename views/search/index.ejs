@@ -1,21 +1,26 @@
 <%- include ../nav.ejs %>
 <div class="row" id="nextUp">
 	<h2 class="title"><i class="icon-note-beamed"></i> Next up</h2>
+	<div class="row">
   <div class="twelve columns" data-aura-component="list-songs-in-party">
   	<p class="loadingSentance">Loading songs in queue <img src="/gumby/img/loading.gif" class="loading" /><p>
   </div>
+  </div>
 </div>
+
 <div class="row" id="search">
-<h2 class="title"><i class="icon-mic"></i> Add a song</h2>
+	<h2 class="title"><i class="icon-mic"></i> Add a song</h2>
   <div class="twelve columns" data-aura-component="find-a-song">
   	<p class="loadingSentance">Loading search bar <img src="/gumby/img/loading.gif" class="loading" /><p>
   </div>
 </div>
+
 <section class="row">
   <div class="twelve columns" data-aura-component="list-songs"></div>
 </section>
+
 <div class="row">
-<h2 class="title"><i class="icon-users"></i> People at the party</h2>
+	<h2 class="title"><i class="icon-users"></i> People at the party</h2>
   <div class="six columns" data-aura-component="users-in-party">
   	<p class="loadingSentance">Loading people at the party <img src="/gumby/img/loading.gif" class="loading" /><p>
   </div>

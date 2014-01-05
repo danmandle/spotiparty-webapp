@@ -1,3 +1,11 @@
+<div class="parties">
 {{#each parties}}
-  <div>{{partyName}}</div>
+  <div class="party">
+  	<a href="#" onclick="$('body').trigger('join.party', {{id}}); return false;">
+  	<span class="pull-right join-party">Join Party <i class="icon-right-open-mini"></i></span>
+  	<h2>{{partyName}}</h2>
+ 	 	<h3>Las Vegas, NV</h3>
+ 	 	</a>
+	</div>
 {{/each}}
+</div>

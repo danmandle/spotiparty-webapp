@@ -1,7 +1,14 @@
 <%- include ../nav.ejs %>
 <div class="row">
-  <div class="six columns" data-aura-component="list-parties"></div>
+	<h2 class="title"><i class="icon-spotify-circled"></i> Parties Near You</h2>
+	<div class="row">
+  <div class="twelve columns" data-aura-component="list-parties">
+  	<p class="loadingSentance">Loading parties <img src="/gumby/img/loading.gif" class="loading" /><p>
+  </div>
+  </div>
 </div>
 <div class="row">
-  <div class="twelve columns" data-aura-component="parties-map"></div>
+  <div class="twelve columns" data-aura-component="parties-map">
+  	<p class="loadingSentance">Loading map <img src="/gumby/img/loading.gif" class="loading" /><p>
+  </div>
 </div>

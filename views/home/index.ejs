@@ -1,27 +1,23 @@
-<div class="row">
-  <div class="three columns center push_four  logo">
-    <img src="/gumby/img/spotiparty_128.png">
-  </div>
-</div>
+<br/><br/>
+<div class="text-center">
+  <img src="/gumby/img/spotiparty-logo-medium.png">
+</div><br/>
 <!-- <div data-hull-component="DataProvidor"></div> -->
 <div data-hull-component="login/button@hull" data-hull-provider="facebook,twitter,github"></div>
 
-<div data-hull-component="active-users"></div>
-
+<!-- <div data-hull-component="active-users"></div> -->
 <script type="text/x-template" data-hull-template="login/button@hull">
-<p>Super test</p>
+<div class="loginArea">
   {{#if matchingProviders}}
-    <button data-hull-action="logout" class="btn btn-small btn-link">
+    <!-- <button data-hull-action="logout" class="btn btn-small btn-link btn-logout">
       Sign Out
-    </button>
+    </button> -->
   {{else}}
     {{#if loggedOut}}
       {{#loggedOut}}
-        <a class="medium primary button">
         <button data-hull-action="login" data-hull-provider="{{.}}" class="btn btn-{{.}}">
           <i class="icon-{{.}}"></i> Sign In with {{classify .}}
         </button>
-        </a>
       {{/loggedOut}}
     {{/if}}
     {{^authServices}}
@@ -33,4 +29,5 @@
       {{/if}}
     {{/authServices}}
   {{/if}}
+</div>
 </script>
