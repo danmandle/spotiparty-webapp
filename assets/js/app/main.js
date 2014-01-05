@@ -94,6 +94,7 @@ if (!window.called) {
             });
 
             window.socket.on('message', function(msg) {
+              console.log('Got socket message', msg.model);
               switch (msg.model) {
                 case 'user':
                   Hull.emit('online.users.change', msg);
