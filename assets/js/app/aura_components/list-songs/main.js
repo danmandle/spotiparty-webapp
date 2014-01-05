@@ -75,7 +75,7 @@ Hull.component({
   },
 
   getParty: function() {
-    var dfd = $.deffered;
+    var dfd = $.Deferred();
     var self = this;
     $.ajax({
       url: '/party/' + this.partyId,
@@ -89,7 +89,7 @@ Hull.component({
   },
 
   addToParty: function(partyId, songId, songName, artist, album) {
-    this.getParty().then(function() {
+    this.getParty().done(function() {
       this.party.playlist.push({
         songId: songId,
         user: this.data.me.attributes,
