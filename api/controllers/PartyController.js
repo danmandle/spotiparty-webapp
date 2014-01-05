@@ -54,8 +54,10 @@ module.exports = {
           return song;
         });
 
-        newList = _.sortBy(newList, 'votes');
-        newList.reverse();
+        newList = _.sortBy(newList, function(song, key) {
+          return key - song.votes;
+        });
+        // newList.reverse();
 
         party.playlist = newList;
 
