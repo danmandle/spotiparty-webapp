@@ -99,7 +99,10 @@ module.exports = {
           user.save(function(err) {
             if (err) return res.send(500);
 
-            res.json(user);
+            res.json({
+              success: true,
+              message: user
+            });
           });
         } else {
           res.send('Must specify a track', 400);
@@ -122,7 +125,7 @@ module.exports = {
         if (!user) return res.send(404);
 
         var track = req.param('track');
-        console.log('User adding playlist', user.playlist);
+        // console.log('User adding playlist', user.playlist);
         if (track) {
           user.playlist = user.playlist.filter(function(t) {
             return t.songId !== track;
@@ -130,7 +133,10 @@ module.exports = {
           user.save(function(err) {
             if (err) return res.send(500);
 
-            res.json(user);
+            res.json({
+              success: true,
+              message: user
+            });
           });
         } else {
           res.send('Must specify a track', 400);

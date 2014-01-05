@@ -20,6 +20,8 @@ Hull.component({
 
     this._filter = Hull.util._.filter;
 
+    setInterval(this.refresh, 5000);
+
     // this.sandbox.on('search.find', Hull.util._.bind(this.setTerm, this));
   }, //Called at component initialization
   beforeRender: function (data, errors) {

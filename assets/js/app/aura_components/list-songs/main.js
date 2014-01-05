@@ -75,33 +75,37 @@ Hull.component({
   },
 
   getParty: function() {
+    var dfd = $.deffered;
     var self = this;
     $.ajax({
       url: '/party/' + this.partyId,
       type: 'get',
       success: function(party) {
         self.party = party;
+        dfd.resolve();
       }
     });
+    return dfd;
   },
 
   addToParty: function(partyId, songId, songName, artist, album) {
-    var newParty = this.party;
-    this.party.playlist.push({
-      songId: songId,
-      user: this.data.me.attributes,
-      songName: songName,
-      artist: artist,
-      albumName: album,
-      votes: 0
-    });
-    $.ajax({
-      url: '/party/' + this.partyId,
-      type: 'put',
-      data: this.party,
-      success: function() {
-        // alert('The song has been added to the party\'s playlist');
-      }
+    this.getParty().then(function() {
+      this.party.playlist.push({
+        songId: songId,
+        user: this.data.me.attributes,
+        songName: songName,
+        artist: artist,
+        albumName: album,
+        votes: 0
+      });
+      $.ajax({
+        url: '/party/' + this.partyId,
+        type: 'put',
+        data: this.party,
+        success: function() {
+          // alert('The song has been added to the party\'s playlist');
+        }
+      });
     });
   }
 
