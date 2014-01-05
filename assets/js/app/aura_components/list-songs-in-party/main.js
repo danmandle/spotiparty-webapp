@@ -29,17 +29,45 @@ Hull.component({
 
   }, //Called after datasources are resolved
   afterRender: function () {
+    var self = this;
+    $('a.up').on('click', function() {
+      var elem = $(this);
+      var data = elem.data();
+      self.makeVote(data.songId, self.party.user, 1);
+    });
+    $('a.down').on('click', function() {
+      var elem = $(this);
+      var data = elem.data();
+      self.makeVote(data.songId, self.party.user, -1);
+    });
   }, //Called after template has been rendered - put jQuery plugin calls here
   /* append your own components methods */
+  makeVote: function(songId, user, vote) {
+    var self =this;
+    $.ajax({
+      url: '/party/vote',
+      type: 'POST',
+      data: {
+        songId: songId,
+        user: user,
+        vote: vote
+      },
+      success: function() {
+        self.refresh();
+        $('a.up, a.down').remove();
+      }
+    });
+  },
   getSongs: function() {
     console.log('Get Zee songs', arguments);
+    var self = this;
 
     var dfd = Hull.data.deferred();
 
     $.getJSON('/party/' + this.partyId,
-      function(trackData) {
-        if(trackData.playlist)
-        dfd.resolve(trackData.playlist);
+      function(party) {
+        dfd.resolve(party.playlist);
+        self.party = party;
       });
 
     return dfd;

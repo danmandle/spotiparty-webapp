@@ -37,6 +37,7 @@ module.exports = {
       .done(function(err, party) {
         if (err) return res.send(500);
         if (!party) return res.send(404);
+        var affected = false;
 
         var songId = req.param('songId');
 
@@ -44,20 +45,30 @@ module.exports = {
         // var theVote = parseInt(toVoteOn.votes, 10);
         var newList = _.map(party.playlist, function(song) {
           if(song.songId === songId) {
+            affected = true;
             theVote = parseInt(song.votes, 10);
-            theVote = + vote;
+            theVote = theVote + vote;
             song.votes = theVote;
           }
+          song.votes = parseInt(song.votes, 10);
           return song;
         });
 
+        newList = _.sortBy(newList, 'votes');
+        newList.reverse();
+
         party.playlist = newList;
 
-        party.save(function(err) {
-          if (err) return res.send(500);
+        if(affected) {
+          party.save(function(err) {
+            if (err) return res.send(500);
 
-          res.json(party);
-        });
+            res.json(party);
+          });
+        } else {
+          res.send(404);
+        }
+
       });
   },
 

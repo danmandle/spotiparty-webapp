@@ -68,7 +68,15 @@ function program1(depth0,data) {
     + "\">\n      <div class=\"order\">\n      ";
   stack2 = helpers['if'].call(depth0, ((stack1 = data),stack1 == null || stack1 === false ? stack1 : stack1.index), {hash:{},inverse:self.program(4, program4, data),fn:self.program(2, program2, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "\n    </div>\n    <div class=\"voting\">\n      <a href=\"#\" class=\"up\"><i class=\"icon-up\"></i></a>\n      <a href=\"#\" class=\"down\"><i class=\"icon-down\"></i></a>\n    </div>\n      <img src=\""
+  buffer += "\n    </div>\n    <div class=\"voting\">\n      <a data-song-id=\"";
+  if (stack2 = helpers.songId) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = (depth0 && depth0.songId); stack2 = typeof stack2 === functionType ? stack2.call(depth0, {hash:{},data:data}) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\" href=\"#\" class=\"up\"><i class=\"icon-up\"></i></a>\n      <a data-song-id=\"";
+  if (stack2 = helpers.songId) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = (depth0 && depth0.songId); stack2 = typeof stack2 === functionType ? stack2.call(depth0, {hash:{},data:data}) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\" href=\"#\" class=\"down\"><i class=\"icon-down\"></i></a>\n    </div>\n      <img src=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.user)),stack1 == null || stack1 === false ? stack1 : stack1.picture)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\" alt=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.user)),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
@@ -105,7 +113,7 @@ function program4(depth0,data) {
   buffer += "<div class=\"searchResults\">\n  ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.songs), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n</div>";
+  buffer += "\n</div>\n";
   return buffer;
   });
 

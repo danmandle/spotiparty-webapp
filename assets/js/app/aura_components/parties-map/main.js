@@ -93,7 +93,7 @@ Hull.component({
 
       var atParty = isAtParty(l, [party.lat, party.long], party.radius);
       if (atParty) {
-        this.parties[party.user].marker = this.L.marker([party.lat, party.long], {icon: icon}).bindPopup('<a href="#" onclick="$(\'body\').trigger(\'join.party\', ' +party.id+'); return false;">Join Party!</a>').addTo(this.map).openPopup();
+        this.parties[party.user].marker = this.L.marker([party.lat, party.long], {icon: icon}).bindPopup('<span>'+party.partyName+'</span><br><a href="#" onclick="$(\'body\').trigger(\'join.party\', ' +party.id+'); return false;">Join Party!</a>').addTo(this.map).openPopup();
       }else {
         this.parties[party.user].marker = this.L.marker([party.lat, party.long], {icon: icon}).bindPopup(party.partyName).addTo(this.map).openPopup();
       }
