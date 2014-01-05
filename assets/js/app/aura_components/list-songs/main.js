@@ -27,6 +27,8 @@ Hull.component({
     console.log('About to render search results with data', data);
     if(!data.songs) return false;
 
+    if(this.party && this.party.partyName) $('#at-party').text('People at ' + this.party.partyName);
+
     data.party = {};
     data.party.id = this.partyId;
 
@@ -89,19 +91,20 @@ Hull.component({
   },
 
   addToParty: function(partyId, songId, songName, artist, album) {
+    var self = this;
     this.getParty().done(function() {
-      this.party.playlist.push({
+      self.party.playlist.push({
         songId: songId,
-        user: this.data.me.attributes,
+        user: self.data.me.attributes,
         songName: songName,
         artist: artist,
         albumName: album,
         votes: 0
       });
       $.ajax({
-        url: '/party/' + this.partyId,
+        url: '/party/' + self.partyId,
         type: 'put',
-        data: this.party,
+        data: self.party,
         success: function() {
           // alert('The song has been added to the party\'s playlist');
         }
