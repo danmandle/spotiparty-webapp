@@ -1,8 +1,8 @@
 <div class="parties">
 {{#each parties}}
   <div class="party">
-  	<a href="#" onclick="$('body').trigger('join.party', {{id}}); return false;">
     {{#if atParty}}
+  	 <a href="#" onclick="$('body').trigger('join.party', {{id}}); return false;">
   	 <span class="pull-right join-party">Join Party <i class="icon-right-open-mini"></i></span>
     {{/if}}
   	<h2>{{partyName}}</h2>
