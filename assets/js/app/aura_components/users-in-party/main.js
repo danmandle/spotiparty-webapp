@@ -3,7 +3,7 @@ Hull.component({
   templates: ['users-in-party'], //Declare the template names you use here
   refreshEvents: ['online.users.change'],
   initialize: function () {
-    this.partyId = getUrlVars()['id'] || this.api.model('me').attributes.extra.partyId;
+    this.partyId = this.api.model('me').attributes.extra.partyId || location.replace('/parties');
   }, //Called at component initialization
   beforeRender: function (data, errors) {}, //Called after datasources are resolved
   afterRender: function () {
