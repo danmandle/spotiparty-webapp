@@ -44,18 +44,26 @@ function program1(depth0,data) {
   if (stack1 = helpers.id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = (depth0 && depth0.id); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
   buffer += escapeExpression(stack1)
-    + "); return false;\">\n  	<span class=\"pull-right join-party\">Join Party <i class=\"icon-right-open-mini\"></i></span>\n  	<h2>";
+    + "); return false;\">\n    ";
+  stack1 = helpers['if'].call(depth0, (depth0 && depth0.atParty), {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n  	<h2>";
   if (stack1 = helpers.partyName) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = (depth0 && depth0.partyName); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
   buffer += escapeExpression(stack1)
     + "</h2>\n 	 	<h3>Las Vegas, NV</h3>\n 	 	</a>\n	</div>\n";
   return buffer;
   }
+function program2(depth0,data) {
+  
+  
+  return "\n  	 <span class=\"pull-right join-party\">Join Party <i class=\"icon-right-open-mini\"></i></span>\n    ";
+  }
 
   buffer += "<div class=\"parties\">\n";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.parties), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n</div>";
+  buffer += "\n</div>\n";
   return buffer;
   });
 
