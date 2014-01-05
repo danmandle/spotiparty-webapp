@@ -53,6 +53,7 @@ Hull.component({
 
   showMap: function() {
     if(!this.data.location) return false;
+    if(this.map) return false;
     console.log('Location Data', this.data.location);
     var l = [this.data.location.coords.latitude, this.data.location.coords.longitude];
     this.$el.height(window.innerHeight / 2);
