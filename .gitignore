@@ -1,2 +1,3 @@
 .tmp
 .tmp/disk.db
+assets/js/app/templates/templates-compiled.js
