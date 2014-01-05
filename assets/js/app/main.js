@@ -132,7 +132,8 @@ if (!window.called) {
           success: function(party) {
             party.users = party.users || [];
             var user = app.data.api.model('me').attributes;
-            user.extra.socketId = io.sockets[location.protocol + '//' + location.host].sessionid;
+            var url = location.host.indexOf('127.0.0') === -1 ? 'http://spotiparty.co:80' : location.protocol + '//' + location.host;
+            user.extra.socketId = io.sockets[url].sessionid;
             user.extra.partyId = partyId;
             party.users.push(user);
             var promise1 = Hull.data.api('me','put', user);
