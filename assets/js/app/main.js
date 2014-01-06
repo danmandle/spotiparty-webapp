@@ -68,6 +68,11 @@ if (!window.called) {
             window.location.replace('/parties');
           }
         }
+        if(window.location.pathname === '/logout') {
+          Hull.logout(function() {
+            window.location.replace('/');
+          });
+        }
 
         if(window.location.pathname === '/search' && Hull.me && !Hull.me.attributes.extra.partyId) {
           window.location.replace('/partyId');

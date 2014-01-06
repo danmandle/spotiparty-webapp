@@ -42,6 +42,10 @@ module.exports.routes = {
 
   '/search': {
     view: 'search/index'
+  },
+
+  '/logout': {
+    view: 'logout/index'
   }
   /*
   // But what if you want your home page to display
