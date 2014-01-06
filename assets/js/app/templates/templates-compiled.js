@@ -40,11 +40,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n  <div class=\"party\">\n  	<a href=\"#\" onclick=\"$('body').trigger('join.party', ";
-  if (stack1 = helpers.id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = (depth0 && depth0.id); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "); return false;\">\n    ";
+  buffer += "\n  <div class=\"party\">\n    ";
   stack1 = helpers['if'].call(depth0, (depth0 && depth0.atParty), {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n  	<h2>";
@@ -56,8 +52,13 @@ function program1(depth0,data) {
   }
 function program2(depth0,data) {
   
-  
-  return "\n  	 <span class=\"pull-right join-party\">Join Party <i class=\"icon-right-open-mini\"></i></span>\n    ";
+  var buffer = "", stack1;
+  buffer += "\n  	 <a href=\"#\" onclick=\"$('body').trigger('join.party', ";
+  if (stack1 = helpers.id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = (depth0 && depth0.id); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "); return false;\">\n  	 <span class=\"pull-right join-party\">Join Party <i class=\"icon-right-open-mini\"></i></span>\n    ";
+  return buffer;
   }
 
   buffer += "<div class=\"parties\">\n";
@@ -82,7 +83,11 @@ function program1(depth0,data) {
     + "\">\n      <div class=\"order\">\n      ";
   stack2 = helpers['if'].call(depth0, ((stack1 = data),stack1 == null || stack1 === false ? stack1 : stack1.index), {hash:{},inverse:self.program(4, program4, data),fn:self.program(2, program2, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "\n    </div>\n    <div class=\"voting\">\n      <a data-song-id=\"";
+  buffer += "\n    </div>\n    <div class=\"voting\">\n      <span style=\"text-align:center;\">";
+  if (stack2 = helpers.votes) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = (depth0 && depth0.votes); stack2 = typeof stack2 === functionType ? stack2.call(depth0, {hash:{},data:data}) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "</span>\n      <a data-song-id=\"";
   if (stack2 = helpers.songId) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
   else { stack2 = (depth0 && depth0.songId); stack2 = typeof stack2 === functionType ? stack2.call(depth0, {hash:{},data:data}) : stack2; }
   buffer += escapeExpression(stack2)
